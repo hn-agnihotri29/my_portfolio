@@ -3,15 +3,15 @@ import './Navbar.style.scss'
 const Navbar = () => {
     return (
         <>
-            <nav className="navContainer">
-                <span>Hna.dev</span>
-                <div className='navLink'>
-                    <span>Home</span>
-                    <span>About</span>
-                    <span>Experience</span>
-                    <span>Projects</span>
-                    <span>Contact</span>
-                </div>
+            <nav>
+                <h3 className='logo'>Hna.dev</h3>
+                <ul className='navLink'>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Experience</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </>
     )
