@@ -1,12 +1,19 @@
 nav {
-    height: 70px;
-    width: 100%;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     display: flex;
+    font-size: 1.7rem;
+    height: auto;
     justify-content: space-between;
-    margin-bottom: 25px;
-    font-size: 20px;
+    left: 0;
+    padding: 30px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    position: fixed;
 
-    h3 {
+    h2 {
         display: block;
         font-size: 1.17em;
         margin-block-start: 1em;
@@ -22,16 +29,15 @@ nav {
         cursor: pointer;
     }
 
-     span {
-        height: 100%;
-        width: 70px;
-        padding: 25px;
-        align-items: center;
-    }
-
     ul {
         display: flex;
         list-style: none;
         gap: 2rem;
+
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+            unicode-bidi: isolate;
+        }
     }
 }
