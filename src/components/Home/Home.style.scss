@@ -1,0 +1,81 @@
+.home-container {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    height: 65rem;
+    justify-content: center;
+    position: relative;
+
+    .content {
+        align-items: center;
+        display: flex;
+        gap: 10rem;
+        height: 65rem;
+        justify-content: center;
+        position: relative;
+
+        .main {
+            align-items: center;
+            display: flex;
+            gap: 10rem;
+            justify-content: center;
+            position: relative;
+    
+            .text {
+                display: flex;
+                flex-direction: column;
+                max-width: 50rem;
+                position: relative;
+    
+                h1 {
+                    color: #2d2e32;
+                    font-size: 5.5rem;
+                    line-height: 1.2;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                }
+    
+                p {
+                    color: #555;
+                    font-family: Mulish, sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    line-height: 1.6;
+                }
+    
+                span {
+                    cursor: pointer;
+                    display: flex;
+                    gap: 1.3rem;
+                    margin: 2.5rem 0;
+                    color: black;
+    
+                    a {
+                        transition: all .2s;
+                        color: #2d2e32;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            align-items: center;
+            bottom: 0;
+            color: #767676;
+            display: flex;
+            font-size: 1.7rem;
+            left: 0;
+            position: absolute;
+
+            p {
+                border-right: 2px solid rgba(45, 46, 50, .5);
+                color: #2d2e32;
+                font-family: Mulish, sans-serif;
+                font-weight: 600;
+                margin-right: 7rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+}
