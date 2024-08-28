@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.style.scss';
+import Timeline from '../WorkTimeline/WorkTimeline';
 
 const Experience = () => {
     return (
@@ -7,8 +8,8 @@ const Experience = () => {
             <div className='container'>
                 <div className='content'>
                     <div className='experience_title'>
-                        <p>Experiences</p>
-            
+                        <span>Experiences</span>
+                        <Timeline />
                     </div>
                 </div>
             </div>
