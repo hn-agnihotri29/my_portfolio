@@ -7,36 +7,36 @@ import './Timeline.style.scss';
 
 const Timeline = () => {
     return (
-        <div className='container'>
+        <div className=' '>
             <VerticalTimeline>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work card"
-                    contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                    contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-                    date="20th May, 2024 - present"
+                    className="vertical-timeline-element--work card" 
+                    contentStyle={{ }}
+                    contentArrowStyle={{ borderRight: "7px ridge" }}
+                    date="May,2024 - present"
                     iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                     icon={<MdWork />}
                 >
                     <h3 className="vertical-timeline-element-title">Software Engineer Inter @EaConnect</h3>
                     <h4 className="vertical-timeline-element-subtitle">Bangalore, IN</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, Project
-                        Management, Team Leading
+                    <p style={{fontSize: '12px', textAlign: "justify"}}>
+                        EA Connect allows for direct, seamless integration between all enterprise applications.
+                        Lead the database migration project, transferring all data from MongoDB to PostgreSQL,
+                        Collaborated with cross-functional teams to implement database schema changes,
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff"}}
-                    contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-                    date="2011 - present"
+                    className="vertical-timeline-element--work card"
+                    contentStyle={{}}
+                    contentArrowStyle={{}}
+                    date="May,2023 - July,2023"
                     iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                     icon={<MdWork />}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, Project
-                        Management, Team Leading
+                    <h3 className="vertical-timeline-element-title">Summer Internship @Salesforce</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Remote, IN</h4>
+                    <p style={{fontSize: '12px', textAlign: "justify"}}>
+                        Done Virtual Internship as Salesforce developer. Learn Apex,Lighting Web Componenet, CRM and API
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
