@@ -1,5 +1,6 @@
 import React from "react";
 import './ProjectWork.style.scss';
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectWork = ({ 
     projectName, 
@@ -23,12 +24,12 @@ const ProjectWork = ({
                     ))}
                 </div>
                 <div className="project-links">
-                    <a href={githubLink} className="btn" target="_blank" rel="noopener noreferrer">
-                        Code
-                    </a>
+                    <a href={githubLink} className="btn code-btn" target="_blank" rel="noopener noreferrer">
+                        Code <FaGithub className="icon"/>
+                    </a> 
                     {liveDemoLink && (
                         <a href={liveDemoLink} className="btn live-demo" target="_blank" rel="noopener noreferrer">
-                            Live Demo
+                            Live Demo <FaExternalLinkAlt className="icon"/>
                         </a>
                     )}
                 </div>
@@ -38,3 +39,4 @@ const ProjectWork = ({
 }
 
 export default ProjectWork;
+ 
