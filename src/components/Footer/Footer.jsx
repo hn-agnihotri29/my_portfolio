@@ -7,11 +7,11 @@ const Footer = () => {
             <footer>
                 <div className='container'>
                     <div className='footerc'> 
-                        "Copyright ©Hna "
-                        "2024"
-                        ". All rights are reserved"
-                    </div>
-                    <div className='footerc__socials'>
+                        <h3>Copyright ©
+                        2024
+                        . All rights are reserved
+                        </h3>
+                        <div className='footerc__socials'>
                         <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harshaja-agnihotri-01a97b22a/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
@@ -30,6 +30,7 @@ const Footer = () => {
                                 </path>
                             </svg>
                         </a>
+                    </div>
                     </div>
                 </div>
 
