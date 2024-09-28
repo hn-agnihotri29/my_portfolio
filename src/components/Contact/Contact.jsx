@@ -63,8 +63,8 @@ const Contact = () => {
                                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg" // Night view of Earth
                                 backgroundColor="white"
                                 animateIn={true}
-                                width={600}
-                                height={600}
+                                width={550}
+                                height={550}
                             />
                         </div>
                     </div>
