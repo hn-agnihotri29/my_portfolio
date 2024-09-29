@@ -30,6 +30,12 @@ nav {
         cursor: pointer;
     }
 
+    .menu-icon {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
     ul {
         display: flex;
         list-style: none;
@@ -41,4 +47,31 @@ nav {
             unicode-bidi: isolate;
         }
     }
+
+   /* Media Query for Mobile */
+   @media (max-width: 768px) {
+        .menu-icon {
+            display: block; /* Show the hamburger icon on mobile */
+        }
+
+        ul {
+            display: none; /* Hide menu by default */
+            flex-direction: column;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            li {
+                padding: 10px 20px;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        ul.active {
+            display: flex; /* Show menu when active */
+        }
+   }
 }
