@@ -14,7 +14,7 @@
       flex: 1.5;
       img {
         max-width: 100%;
-        height: 100%;
+        height: auto; /* Maintain aspect ratio */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
@@ -101,12 +101,35 @@
   
 // Responsive Design for smaller screens
 @media (max-width: 768px) {
-.project {
+  .project {
     flex-direction: column;
+    padding: 15px; /* Reduce padding for smaller screens */
+    
+    .project-image {
+      flex: none; /* Remove flex property */
+      margin-bottom: 20px; /* Space between image and details */
+    }
 
     .project-details {
-    padding-left: 0;
-    padding-top: 20px;
+      padding-left: 0;
+      padding-top: 20px;
+
+      h3 {
+        font-size: 20px; /* Slightly smaller font size */
+      }
+
+      p {
+        font-size: 15px; /* Adjust font size for better readability */
+      }
+
+      .technologies {
+        margin-left: 0; /* Align technologies to the left */
+      }
+
+      .project-links {
+        margin-left: 0; /* Center-align buttons */
+        justify-content: center; /* Center the buttons */
+      }
     }
-}
+  }
 }
