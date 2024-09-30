@@ -1,12 +1,20 @@
 .about {
     background-color: #fff;
     padding: 15rem 0;
+
+    @media (max-width: 768px) {
+        padding: 8rem 0; /* Reduce padding on mobile */
+    }
 }
 
 .container {
     margin: 0 auto;
     max-width: 107rem;
-    padding: 0 4rem;   
+    padding: 0 4rem;  
+    
+    @media (max-width: 768px) {
+        padding: 0 2rem; /* Narrower padding on mobile */
+    }
 }
 
 .about-content {
@@ -14,14 +22,42 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        text-align: center; /* Center align text for mobile */
+    }
 }
 
 .img-side {
     position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        margin-bottom: 2rem; /* Add some space between image and text on mobile */
+    }
+}
+
+.img-side__main-img {
+    border-radius: 1.7rem;
+    height: 35rem;
+    width: 41rem;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+        height: auto;
+        width: 100%; /* Make image take full width on mobile */
+    }
 }
 
 .text-side {
     padding-right: 1.5rem;
+
+    @media (max-width: 768px) {
+        padding-right: 0; /* Remove right padding on mobile */
+        text-align: center; /* Center the text on mobile */
+    }
 
     h3 {
         color: #147efb;
@@ -29,6 +65,10 @@
         font-weight: 700;
         margin-bottom: 1rem;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem; /* Slightly smaller on mobile */
+        }
     }
 
     h4 {
@@ -37,6 +77,11 @@
         font-size: 2.5rem;
         line-height: 1.4;
         margin-bottom: 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem; /* Reduce font size on mobile */
+            margin-bottom: 1.5rem; /* Reduce margin on mobile */
+        }
     }
 
     p {
@@ -46,5 +91,11 @@
         font-weight: 500;
         line-height: 1.5;
         text-align: justify;
+
+        @media (max-width: 768px) {
+            font-size: 1.6rem; /* Slightly smaller text on mobile */
+            text-align: justify; /* Align left for better readability */
+        }
     }
 }
+
