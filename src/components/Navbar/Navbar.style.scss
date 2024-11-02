@@ -39,12 +39,18 @@ nav {
     ul {
         display: flex;
         list-style: none;
-        gap: 2rem;
+        gap: 1.5rem;
 
         li {
+            cursor: pointer;
             display: list-item;
             text-align: -webkit-match-parent;
             unicode-bidi: isolate;
+            font-weight: 600;
+
+            &:hover {
+                color: #147efb; // or your preferred hover color
+            }
         }
     }
 

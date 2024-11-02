@@ -95,6 +95,10 @@
         @media (max-width: 768px) {
             font-size: 1.6rem; /* Slightly smaller text on mobile */
             text-align: justify; /* Align left for better readability */
+            padding: 0 1rem; /* Added padding to prevent text from touching edges */
+            word-wrap: break-word; /* Ensures words break properly */
+            overflow-wrap: break-word; /* Additional support for word breaking */
+            max-width: 100%;
         }
     }
 }
