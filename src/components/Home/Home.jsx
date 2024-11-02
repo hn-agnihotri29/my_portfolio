@@ -4,7 +4,7 @@ import TechSkill from '../TechSkill/TechSkill';
 
 const  Home = () => {
     return (
-       <div className='hero'>
+       <div className='hero' id="home">
             <div className='container'>
                 <div className='content'>
                     <div className='main'>

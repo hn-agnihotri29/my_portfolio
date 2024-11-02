@@ -9,6 +9,14 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setIsOpen(false); // Close mobile menu after clicking
+        }
+    };
+
     return (
         <>
             <nav>
@@ -17,11 +25,11 @@ const Navbar = () => {
                     {isOpen ? '✖' : '☰'}
                 </div>
                 <ul className={`navLink ${isOpen ? 'active' : ''}`}>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li onClick={() => scrollToSection('home')}>Home</li>
+                    <li onClick={() => scrollToSection('about')}>About</li>
+                    <li onClick={() => scrollToSection('experience')}>Experience</li>
+                    <li onClick={() => scrollToSection('projects')}>Projects</li>
+                    <li onClick={() => scrollToSection('contact')}>Contact</li>
                 </ul>
             </nav>
         </>

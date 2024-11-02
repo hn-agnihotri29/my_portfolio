@@ -4,7 +4,7 @@ import "./About.style.scss";
 
 const AboutMe = () => {
     return (
-        <div className='about'>
+        <div className='about' id="about">
             <div className='container'>
                 <div className='about-content'>
                     <div className='img-side'>

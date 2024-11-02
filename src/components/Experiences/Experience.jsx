@@ -4,7 +4,7 @@ import Timeline from '../WorkTimeline/WorkTimeline';
 
 const Experience = () => {
     return (
-        <div className='experience'>
+        <div className='experience' id="experience">
             <div className='container'>
                 <div className='content'>
                     <div className='experience_title'>

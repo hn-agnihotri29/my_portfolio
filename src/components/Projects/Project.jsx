@@ -4,7 +4,7 @@ import ProjectWork from "../ProjectWork/Projectwork";
 
 const Project = () => {
     return (
-        <div className="project_container">
+        <div className="project_container" id="projects">
             <div className="project_content">
                 <div className="project_title">
                     <p>project</p>
