@@ -1,33 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.style.scss';
-import Globe from 'react-globe.gl'; // For the 3D globe
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        email: '',
-        message: '',
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle sending email to backend here
-        fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
-        })
-        .then(response => response.json())
-        .then(data => alert('Email sent successfully!'))
-        .catch(error => alert('Error sending email'));
-    };
 
     return (
         <div className='contact' id="contact">
@@ -37,36 +11,37 @@ const Contact = () => {
                         <p>contact</p>
                         <h3>Don't be shy! Hit me up! 👇</h3>
                     </div>
-                    <div className='section'> 
-                        <div className='contact_form'>
-                            <form onSubmit={handleSubmit}>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Your Email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                                <textarea
-                                    name="message"
-                                    placeholder="Your Message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                ></textarea>
-                                <button type="submit">Send Message</button>
-                            </form>
+                    <div className='contact_icons'> 
+                        <div className='contact-icon-box'>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
+                                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
+                                className="tabler-icon tabler-icon-map-search">
+                                    <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5">
+                                    </path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0">
+                                    </path><path d="M20.2 20.2l1.8 1.8"></path>
+                                </svg>
+                            </span>
+                            <div className='contact-icon-info'>
+                                <h3>Location</h3>
+                                <p>Bangalore, India</p>
+                            </div>
                         </div>
-                        <div className='globe'>
-                            <Globe
-                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg" // Night view of Earth
-                                backgroundColor="white"
-                                animateIn={true}
-                                width={550}
-                                height={550}
-                            />
+                        <div className='contact-icon-box'>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
+                                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
+                                className="tabler-icon tabler-icon-mail">
+                                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                    <path d="M3 7l9 6l9 -6"></path>
+                                </svg>
+                            </span>
+                            <div className='contact-icon-info'>
+                                <h3>Email</h3>
+                                <a href="mailto:hn.agnihotri29@gmail.com">hn.agnihotri29@gmail.com</a>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
